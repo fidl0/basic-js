@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  * 
  */
 function transform(arr) {
-  throw new NotImplementedError('Not implemented');
+
   let resArr = arr;
   if ( arr == '' ) return [];
 

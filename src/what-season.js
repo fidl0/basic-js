@@ -20,7 +20,6 @@ function getSeason(date) {
   if ( season >= 2 && season <= 4 ) return 'spring';
   if ( season >= 5 && season <= 7 ) return 'summer';
   if ( season >= 8 && season <= 10 ) return 'autumn';
-
 }
 
 module.exports = {

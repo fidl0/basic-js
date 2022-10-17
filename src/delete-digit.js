@@ -12,7 +12,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
  function deleteDigit(n) {
-  throw new NotImplementedError('Not implemented');
+
   let len = n.toString().length;
 
   let max = Number(n.toString().split('').filter( (el, id) => {

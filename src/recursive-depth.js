@@ -16,18 +16,19 @@ let depth = 1,
     max = 0;
 class DepthCalculator {
 
+
   calculateDepth(arr) {
-    throw new NotImplementedError('Not implemented');
+
     for ( let i = 0; i < arr.length; i++ ) {
       if ( Array.isArray(arr[i]) ) {
         depth++;
         this.calculateDepth(arr[i]);
-        if (depth < max) depth = max;
-        depth = 1;
       }
+      if (depth > max) max = depth;
+      depth = 1;
     }
 
-    return depth;
+    return max;
   }
 
 }
